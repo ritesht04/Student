@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="R.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">  
+    <form  name="form1"id="contact" action="update.php" method="post" onsubmit="return validate()">
+      <center> <img src="logo.png" alt="holkar logo" width="200" height="200">
+      <h3>GOVT HOLKAR SCIENCE COLLEGE INDORE</h3>
+      <h4>UPDATE YOUR PROFILE</h4></center>
+      <fieldset>
+        <input placeholder="Your name" type="text" name="name" required autofocus><span id="name"></span>
+      </fieldset>
+
+      <fieldset>
+        <input placeholder="Your Subject" type="text" name="subject" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Section" type="text" name="section" required>
+      </fieldset>
+
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" name="email" required><span id="email"></span>
+      </fieldset>
+
+      <fieldset>
+        <input placeholder="Your Phone Number" type="tel" name="phone" required><span id="phone"></span>
+      </fieldset>
+
+    <fieldset>
+        <input placeholder="Your Password" type="password" name="password" required><span id="password"></span>
+    </fieldset>
+    <input type="date" name="date"><br>
+
+      MALE:<input type="radio" name="gender" value="male">&nbsp;&nbsp;&nbsp;FEMALE:<input type="radio" name="gender" value="female"><br>
+      
+
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit">Submit</button>
+    </fieldset>
+
+    <p class="copyright">Designed by Ritesh</p>
+  </form>
+</body>
+</html>
